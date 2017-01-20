@@ -1,7 +1,10 @@
-# Defualt Grub boot menu is hidden
+# Default Grub boot menu is hidden
     sudo vim /et/defult
     
     #GRUB_HIDDEN_TIMEOUT=0
     #GRUB_HIDDEN_TIMEOUT_QUIET=true
 
     sudo update-grub
+
+# Default Editor
+	sudo update-alternatives --config editor
