@@ -8,3 +8,8 @@
 
 # Default Editor
 	sudo update-alternatives --config editor
+
+# Update Kernel
+## It is very easy!
+## Ref: https://magiclen.org/ubuntu-kernel-update/
+
