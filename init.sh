@@ -4,4 +4,4 @@
 
 . bashrc_cfg.sh
 
-cp .vimrc ~/.vimrc
+#cp .vimrc ~/.vimrc

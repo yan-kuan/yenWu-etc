@@ -9,6 +9,6 @@ sudo apt-get install -y\
 	doxygen	apache2-utils 	check	gcc-arm-linux-gnueabihf \
 	g++-arm-linux-gnueabihf	git	git-core	qemu-user\
 	qemu-system-arm		shutter	zlib1g-dev libsdl1.2-dev \
-	libglib2.0-dev 	"automake*" 	"autoconf*" libtool libpixman-1-dev\
+	libglib2.0-dev 	automake 	autoconf libtool libpixman-1-dev\
 	lib32gcc1 	lib32ncurses5	gcc-arm-none-eabi libnewlib-arm-none-eabi\
-	libtool		htop	minicom	wgets	libusb-1.0-0-dev gdb gdb-arm-none-eabi
+	libtool		htop	minicom	wget	libusb-1.0-0-dev gdb gdb-arm-none-eabi
