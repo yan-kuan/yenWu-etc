@@ -26,11 +26,10 @@ cd ~/stm32_workspace
 sudo apt-get install automake* libtool libusb-1.0-0-dev
 git clone http://github.com/texane/stlink.git
 cd stlink
-./autogen.sh 
-./configure --prefix=/usr
+cmake -DCMAKE_INSTALL_PREFIX=/usr .
 make -j4
 sudo make install -j4
-sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
+sudo cp etc/udev/rules.d/49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
 
 ##OpenOCD
 cd ~/stm32_workspace

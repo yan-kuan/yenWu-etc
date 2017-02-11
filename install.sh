@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo Hello
+
 sudo apt-get update
 
 sudo apt-get install -y\
@@ -11,7 +12,8 @@ sudo apt-get install -y\
 	qemu-system-arm		shutter	zlib1g-dev libsdl1.2-dev \
 	libglib2.0-dev 	automake 	autoconf libtool libpixman-1-dev\
 	lib32gcc1 	lib32ncurses5	gcc-arm-none-eabi libnewlib-arm-none-eabi\
-	libtool		htop	minicom	wget	libusb-1.0-0-dev gdb gdb-arm-none-eabi
+	libtool		htop	minicom	wget	libusb-1.0-0-dev gdb gdb-arm-none-eabi\
+	cloc minicon
 
 # Denpendace Package of Compiling Linux Kernel
 ## Reference: https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=350806
