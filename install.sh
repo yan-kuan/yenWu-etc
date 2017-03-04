@@ -19,3 +19,11 @@ sudo apt-get install -y\
 ## Reference: https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=350806
 #sudo apt-get install -y\
 #	 fakeroot build-essential ncurses-dev xz-utils kernel-package\
+
+# Install Repo
+mkdir ~/bin
+echo "" >> ~/.bashrc
+echo "#Repo tool" >> ~/.bashrc
+echo "PATH=~/bin:$PATH" >> ~/.bashrc
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+sudo chmod a+x ~/bin/repo
