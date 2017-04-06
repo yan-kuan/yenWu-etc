@@ -13,17 +13,18 @@ sudo apt-get install -y\
 	libglib2.0-dev 	automake 	autoconf libtool libpixman-1-dev\
 	lib32gcc1 	lib32ncurses5	gcc-arm-none-eabi libnewlib-arm-none-eabi\
 	libtool		htop	minicom	wget	libusb-1.0-0-dev gdb gdb-arm-none-eabi\
-	cloc    minicon manpages-posix  manpages-posix-dev  pdfshuffler
+	cloc    minicon manpages-posix  manpages-posix-dev  pdfshuffler \
+    ctags cscope
 
 # Denpendace Package of Compiling Linux Kernel
 ## Reference: https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=350806
-#sudo apt-get install -y\
-#	 fakeroot build-essential ncurses-dev xz-utils kernel-package\
+sudo apt-get install -y\
+	 fakeroot build-essential ncurses-dev xz-utils kernel-package\
 
 # Install Repo
 mkdir ~/bin
-echo "" >> ~/.bashrc
-echo "#Repo tool" >> ~/.bashrc
-echo "PATH=~/bin:$PATH" >> ~/.bashrc
+echo ""
+echo "#Repo tool"
+echo "PATH=~/bin:$PATH"
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 sudo chmod a+x ~/bin/repo
