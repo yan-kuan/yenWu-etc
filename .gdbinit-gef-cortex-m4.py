@@ -1108,9 +1108,8 @@ class ARM(Architecture):
         30: "zero",
         29: "carry",
         28: "overflow",
-        7: "interrupt",
-        6: "fast",
-        5: "thumb"
+        27: "dsp_overflow",
+        24: "thumb",
     }
     function_parameters = ["$r0", "$r1", "$r2", "$r3"]
 
