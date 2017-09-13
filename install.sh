@@ -14,7 +14,7 @@ sudo apt-get install -y\
 	lib32gcc1 	lib32ncurses5	gcc-arm-none-eabi libnewlib-arm-none-eabi\
 	libtool		htop	minicom	wget	libusb-1.0-0-dev gdb gdb-arm-none-eabi\
 	cloc    minicon manpages-posix  manpages-posix-dev  pdfshuffler \
-    ctags cscope
+    ctags cscope exuberant-ctags libssl-dev
 
 # Denpendace Package of Compiling Linux Kernel
 ## Reference: https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=350806
