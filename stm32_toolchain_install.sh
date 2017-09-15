@@ -15,6 +15,15 @@ git submodule update --init dtc || sudo apt-get install libfdt-dev
     --extra-cflags=-DSTM32_UART_NO_BAUD_DELAY \
     --extra-cflags=-DSTM32_UART_ENABLE_OVERRUN \
     --disable-gtk
+# Debug version
+#
+###./configure --disable-werror --enable-debug \
+###       --target-list="arm-softmmu" \
+###       --extra-cflags=-DDEBUG_CLKTREE \
+###       --extra-cflags=-DDEBUG_STM32_RCC \
+###       --extra-cflags=-DDEBUG_STM32_UART \
+###       --extra-cflags=-DSTM32_UART_NO_BAUD_DELAY \
+###       --extra-cflags=-DSTM32_UART_ENABLE_OVERRUN --python=python2
 make -j4
 
 echo "" >> ~/.bashrc
