@@ -31,7 +31,10 @@ Bundle 'wesleyche/SrcExpl'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'wesleyche/Trinity'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 "Bundle 'vivien/vim-addon-linux-coding-style'
+Bundle 'Valloric/YouCompleteMe'
 
 
 set foldmethod=marker
