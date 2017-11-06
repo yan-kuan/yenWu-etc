@@ -1,4 +1,27 @@
 syntax on
+"try"
+set mouse=a
+set number
+set cursorline
+set colorcolumn=81
+
+set scrolloff=7
+set incsearch
+set hlsearch "\:noh
+set encoding=utf-8
+set smartindent
+
+set wildmenu
+set wildmode=list:longest,full
+set wildignore=*.o,*.pyc,*.~
+
+"vnoremap v: visual nore: no recursive
+vnoremap < <gv
+vnoremap > >gv
+"imap i:insert
+set splitright
+set splitbelow
+""
 set nu
 set ai
 set tabstop=4
@@ -29,6 +52,7 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 "Bundle 'garbas/vim-snipmate'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'scrooloose/nerdtree'
+"Bundle majutsushi/tagbar
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'wesleyche/Trinity'
 Bundle 'vim-airline/vim-airline'
@@ -36,6 +60,14 @@ Bundle 'vim-airline/vim-airline-themes'
 "Bundle 'vivien/vim-addon-linux-coding-style'
 Bundle 'Valloric/YouCompleteMe'
 
+Bundle 'Yggdroot/indentLine'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'luochen1990/rainbow'
+let g:rainbow_active = 1 "or :RainbowToggle
+
+"TODO
+Bundle 'airblade/vim-gitgutter'
 
 set foldmethod=marker
 
