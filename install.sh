@@ -42,11 +42,11 @@ sudo apt-get install -y ${KER}
 
 # Denpendace Package of Compiling Linux Kernel
 ## Reference: https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=350806
-sudo apt-get install -y\
-	 fakeroot build-essential ncurses-dev xz-utils kernel-package\
+#sudo apt-get install -y\
+#	 fakeroot build-essential ncurses-dev xz-utils kernel-package\
 
 # Install Repo
-mkdir ~/bin
+mkdir -p ~/bin
 echo ""
 echo "#Repo tool"
 echo "PATH=~/bin:$PATH"
