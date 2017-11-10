@@ -28,7 +28,7 @@ make -j4
 
 echo "" >> ~/.bashrc
 echo "#STM32 Qemu" >> ~/.bashrc
-echo "PATH=~/stm32_workspace/qemu_stm32/arm-softmmu:$PATH" >> ~/.bashrc
+echo 'export PATH=~/stm32_workspace/qemu_stm32/arm-softmmu:${PATH}' >> ~/.bashrc
 
 #ST-LINK install
 cd ~/stm32_workspace
