@@ -5,7 +5,7 @@ mkdir -p ~/stm32_workspace
 
 #STM on Qemu
 cd ~/stm32_workspace
-git clone git://github.com/beckus/qemu_stm32.git || git clone https://github.com/beckus/qemu_stm32.git
+git clone https://github.com/beckus/qemu_stm32.git
 
 cd qemu_stm32
 git reset --hard b36b2626c361ddeb5b78df37feff42a83bc7da24
