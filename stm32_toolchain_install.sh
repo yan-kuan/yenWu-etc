@@ -9,7 +9,7 @@ git clone https://github.com/beckus/qemu_stm32.git
 
 cd qemu_stm32
 git reset --hard b36b2626c361ddeb5b78df37feff42a83bc7da24
-git submodule update --init dtc || sudo apt-get install libfdt-dev
+git submodule update --init dtc || sudo apt-get install -y libfdt-dev
 ./configure --disable-werror --enable-debug \
     --target-list="arm-softmmu" \
     --extra-cflags=-DSTM32_UART_NO_BAUD_DELAY \
@@ -32,7 +32,7 @@ echo "PATH=~/stm32_workspace/qemu_stm32/arm-softmmu:$PATH" >> ~/.bashrc
 
 #ST-LINK install
 cd ~/stm32_workspace
-sudo apt-get install automake* libtool libusb-1.0-0-dev
+sudo apt-get install -y automake* libtool libusb-1.0-0-dev
 git clone http://github.com/texane/stlink.git
 cd stlink
 cmake -DCMAKE_INSTALL_PREFIX=/usr .
@@ -42,7 +42,7 @@ sudo cp etc/udev/rules.d/49-stlinkv2.rules /etc/udev/rules.d/49-stlinkv2.rules
 
 ##OpenOCD
 cd ~/stm32_workspace
-sudo apt-get install texi2html texinfo
+sudo apt-get install -y texi2html texinfo
 git clone git://git.code.sf.net/p/openocd/code openocd
 cd openocd
 ./bootstrap
