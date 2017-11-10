@@ -133,3 +133,13 @@ let g:SrcExpl_isUpdateTags = 0
 ""-------------------------------------------------------"
 let NERDTreeWinPos = "left"
 ""nmap <F9> :NERDTreeToggle<CR>
+
+""-------------------------------------------------------"
+""   vim-gitgutter: https://github.com/airblade/vim-gitgutter
+""-------------------------------------------------------"
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hr <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
