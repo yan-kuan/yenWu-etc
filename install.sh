@@ -16,7 +16,7 @@ COM="vim   build-essential python-pip python3-pip python-dev python3-dev
      libglib2.0-dev automake    autoconf    libtool libpixman-1-dev
      lib32gcc1  lib32ncurses5   gcc-arm-none-eabi   libnewlib-arm-none-eabi
      libtool    htop    minicom wget    libusb-1.0-0-dev    gdb
-     gdb-arm-none-eabi  cloc   pdfshuffler  subversion
+     gdb-arm-none-eabi  cloc   pdfshuffler  subversion mc
      ctags cscope exuberant-ctags libssl-dev tmux texmaker curl"
 
 # For different distributions

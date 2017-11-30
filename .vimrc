@@ -1,4 +1,11 @@
 syntax on
+
+set bg=dark
+set ruler
+set formatoptions+=r
+set history=100
+"set incsearch
+
 "try"
 set mouse=a
 set number
@@ -21,6 +28,7 @@ vnoremap > >gv
 "imap i:insert
 set splitright
 set splitbelow
+au BufRead,BufNewFile *.mk set filetype=make
 ""
 set nu
 set ai
