@@ -62,4 +62,5 @@ vcs-import src < ros2.repos
 sudo apt-get -y install libopensplice67  # from repo.ros2.org
 
 # Build Prototype
-cd $WS/ros2_ws/src/ament/ament_tools/scripts/ament.py build --build-tests --symlink-install
+cd $WS/ros2_ws
+src/ament/ament_tools/scripts/ament.py build --build-tests --symlink-install
