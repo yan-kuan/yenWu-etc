@@ -17,6 +17,10 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 # StepUp ENV  #
 ###############
 
+# GPG dependencies
+# ref: https://answers.ros.org/question/264654/gpg-error-on-debian/
+sudo apt-get install gnupg dirmngr
+
 # apt repository
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
